@@ -11,7 +11,7 @@ import org.litepal.crud.DataSupport;
 public class Province extends DataSupport {
     private int id;//自增长ID
     private String provinceName;
-    private String provinceCode;//省的代号 ID
+    private int provinceCode;//省的代号 ID
 
     public int getId() {
         return id;
@@ -29,11 +29,11 @@ public class Province extends DataSupport {
         this.provinceName = provinceName;
     }
 
-    public String getProvinceCode() {
+    public int getProvinceCode() {
         return provinceCode;
     }
 
-    public void setProvinceCode(String provinceCode) {
+    public void setProvinceCode(int provinceCode) {
         this.provinceCode = provinceCode;
     }
 }
